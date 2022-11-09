@@ -16,7 +16,7 @@ $(coms_out_2): soush-files/% : output/commands/%.o
 	cp $(patsubst soush-files/%, output/commands/%.o, $@) $@
 	@echo "INSTALL   $@"
 
-.PHONY: all build-commands build-sh
+.PHONY: all build-commands build-sh install
 
 all: build-commands build-sh
 
@@ -35,6 +35,7 @@ build-sh:
 
 install: $(coms_out_2)
 	@sudo cp soush /bin/soush
+	@sudo mkdir -p /bin/soush-files
 	@sudo rm -r /bin/soush-files
 	@sudo cp -r soush-files /bin/soush-files
 	@echo "---------------------------------------"
