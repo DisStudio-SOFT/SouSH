@@ -25,10 +25,6 @@ build-commands: $(coms_obj)
 	@echo "| Done!                       |"
 	@echo "| Commands in output/commands |"
 	@echo "-------------------------------"
-install-commands-test: $(coms_out_2)
-	@echo "-------------------------------"
-	@echo "| Done!                       |"
-	@echo "-------------------------------"
 
 build-sh:
 	@gcc $(sh_src) -o soush
@@ -36,3 +32,12 @@ build-sh:
 	@echo "| Done!                       |"
 	@echo "| Shell in soush              |"
 	@echo "-------------------------------"
+
+install: $(coms_out_2)
+	@sudo cp soush /bin/soush
+	@sudo rm -r /bin/soush-files
+	@sudo cp -r soush-files /bin/soush-files
+	@echo "---------------------------------------"
+	@echo "| Done!                               |"
+	@echo "| Shell and all commands is installed |"
+	@echo "---------------------------------------"
