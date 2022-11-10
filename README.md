@@ -13,8 +13,6 @@ make build-commands
 # Установка шелла
 
 ```
-make build-sh
-make build-commands
 make install
 ```
 
