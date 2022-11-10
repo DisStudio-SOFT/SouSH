@@ -1,5 +1,9 @@
 <div>
     <img src="https://img.shields.io/github/license/DisStudio-SOFT/SouSH"/>
+    <img src="https://img.shields.io/github/repo-size/DisStudio-SOFT/SouSH"/>
+    <img src="https://img.shields.io/github/languages/top/DisStudio-SOFT/SouSH"/>
+    <img src="https://img.shields.io/github/languages/count/DisStudio-SOFT/SouSH"/>
+    <img src="https://img.shields.io/github/stars/DisStudio-SOFT/SouSH?style=social"/>
 </div>
 
 # Компиляция шелла
