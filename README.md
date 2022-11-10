@@ -1,3 +1,7 @@
+<div>
+    <img src="https://img.shields.io/github/license/DisStudio-SOFT/SouSH"/>
+</div>
+
 # Компиляция шелла
 
 ```
